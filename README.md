@@ -1,6 +1,6 @@
 # Django Starter CLI
 
-A CLI tool for quickly bootstrapping new Django projects preconfigured with **Tailwind CSS, DaisyUI, AlpineJS, HTMX, Django-partials, Django-cotton, and allauth**.  
+A CLI tool for quickly bootstrapping new Django projects preconfigured with **Tailwind CSS, DaisyUI, AlpineJS, HTMX, Django-partials, Django-cotton, live broswer reloading, and allauth**.  
 
 This tool automates:  
 - Cloning the Django starter template  
@@ -16,8 +16,9 @@ With a single command, you’ll have a ready-to-run Django project with Tailwind
 ## ✨ Features
 - 🐍 Django 5.2.x preconfigured with:
   - Tailwind CSS 4 + DaisyUI  
-  - AlpineJS + HTMX  
-  - django-allauth, django-cotton, django-template-partials  
+  - AlpineJS + HTMX
+  - django-browser-reload
+  - django-allauth, django-cotton, django-template-partials 
   - Stripe-ready integration scaffold  
 - 🔑 Auto-generated `.env` file with secure Django secret key  
 - 🛠️ Auto-generated `.gitignore` for Python, Django, and Node projects  
