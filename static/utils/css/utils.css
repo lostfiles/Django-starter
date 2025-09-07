@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+:root {
+	/* Theme Colors */
+	--background-color: #fff;
+	--highlight-color: #ff7816;
+	--accent-color: #FDF6C9;
+	--primary-color: #3D4381;
+
+	--text-color: #ffffff;
+	--text-secondary-color: ;
+	--text-accent-color: ;
+	--highlight-color: ;
+
+	--link-color: #0741ff;
+
+	--text-color-black: #000;
+	--text-color-white: #fff;
+
+	--solid-white-color: #fff;
+	--solid-black-color: #000;
+	/* End Theme Colors */
+
+	/* Status Colors */
+	--status-error-color: #ff4040;
+	--status-success-color: rgba(138, 255, 143, 0.9);
+	--status-notify-color: #ff3526;
+	--badge-color: #0790FF;
+	/* End Status Colors */
+
+	--scroll-bar-color: #000;
+
+	/* Font Styles */
+	--font-light:      300;
+	--font-regular:    400;
+	--font-medium:     500;
+	--font-semi-bold:  600;
+	--font-bold:       700;
+	--font-extra-bold: 800;
+	--font-heavy:      900;
+	/* End Font Styles */
+
+	/* Screen Size Website Views */
+	--device-view-size: 95%;
+	/* End Screen Size Website Views */
+
+	--fam-default: "Inter", sans-serif;
+	--fam-dm:	   "DM Sans", sans-serif;
+	--fam-prata:      "Prata", serif;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 7px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background: var(--scroll-bar-color);
+    width: 0px;
+}
+
+html, body {
+	background: var(--background-color);
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	font-family: var(--fam-default);
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+ul {
+	padding-left: 0px;
+}
+
+nav, header, section, main, footer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+input, 
+input[type="checkbox"],
+input[type="radio"],
+input[type="number"],
+button {
+	-webkit-appearance: none; /* For Webkit browsers (Chrome, Safari, Opera) */
+  	-moz-appearance: none;    /* For Mozilla Firefox */
+  	appearance: none; 
+  	border: none;
+  	border-radius: none;
+}
+
+.wrapper {
+	width: var(--device-view-size);
+}
+
+.stop-scrolling {
+  height: 100% !important;
+  overflow: hidden !important;
+}
