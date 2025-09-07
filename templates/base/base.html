@@ -1,0 +1,25 @@
+{% load i18n static django_browser_reload bootstrap_icons django_htmx partials alpine_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{% endblock %}</title>
+
+  <link rel="stylesheet" type="text/css" href="{% static 'dist/src/output.css' %}"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'utils/css/utils.css' %}"/>
+
+  {% comment %} THIRD PARTY SCRIPTS {% endcomment %}
+  {% htmx_script %}
+  <script defer src="{% static 'js/alpine.js' %}"></script>
+  {% comment %} THIRD PARTY SCRIPTS (END) {% endcomment %}
+
+  {% block styles %}{% endblock %}
+</head>
+<body>
+
+  {% block content %}{% endblock %}
+
+  {% django_browser_reload_script %}
+</body>
+</html>
